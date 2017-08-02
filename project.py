@@ -20,7 +20,7 @@ APPLICATION_NAME = "category website Application"
 
 
 # Connect to Database and create database session
-engine = create_engine('sqlite:///categorieswithusers.db')
+engine = create_engine('postgresql://item:sillypassword@localhost/item')
 Base.metadata.bind = engine
 
 DBSession = sessionmaker(bind=engine)
