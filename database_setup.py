@@ -56,7 +56,7 @@ class Website(Base):
         }
 
 
-engine = create_engine('sqlite:///categorieswithusers.db')
+engine = create_engine('postgresql://item:sillypassword@localhost/item')
 
 
 Base.metadata.create_all(engine)
